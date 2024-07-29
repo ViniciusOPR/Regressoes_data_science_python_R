@@ -1,0 +1,23 @@
+---
+Exercício - Regressão - R
+---
+```{r}
+dados = read.csv("slr12.csv", sep = ";")
+dados
+```
+```{r}
+modelo = lm(CusInic ~ FrqAnual, data=dados)
+modelo
+```
+```{r}
+plot(CusInic ~ FrqAnual, data=dados)
+abline(modelo)
+```
+```{r}
+v = 1200
+prev_investimento = predict(modelo, data.frame(FrqAnual = v))
+prev_investimento
+
+```
+
+

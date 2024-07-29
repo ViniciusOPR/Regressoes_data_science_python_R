@@ -1,0 +1,25 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+```{r}
+dados = read.csv("teste.csv", sep=";")
+dados
+```
+```{r}
+cor(dados
+    )
+```
+```{r}
+women
+modelo = lm(height ~ weight, data=women)
+modelo
+```
+```{r}
+predict(modelo, data.frame(weight=30))
+```
+```{r}
+plot(height ~ weight, data=women, ylab="Altura", xlab="Peso", main = "Women")
+abline(modelo)
+```
+
